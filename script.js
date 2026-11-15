@@ -15,6 +15,21 @@
     label();
   });
 
+  // Mobile burger menu
+  var nav = document.querySelector('.nav');
+  var menuBtn = document.getElementById('menu-toggle');
+  function setMenu(open) {
+    nav.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  menuBtn.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function () { setMenu(false); });
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 800) setMenu(false); });
+
   // Highlight the side-nav dot for the section currently in view
   var dots = document.querySelectorAll('.side-nav a');
   function setActive() {

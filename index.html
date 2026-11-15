@@ -19,11 +19,12 @@
     <div class="nav-inner">
       <a href="#top" class="brand">Stefan van Schoor</a>
       <nav aria-label="Primary">
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#future">Future Plans</a></li>
+          <li><a href="#references">References</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#cv">CV</a></li>
           <li><a href="https://www.linkedin.com/in/stefan-van-schoor-0a0367138/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -32,6 +33,9 @@
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
         <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
   </header>
@@ -47,9 +51,32 @@
             <svg class="icon-li" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.200 2.100 2.100 0 0 1 0 4.200zM7.100 20.500H3.600V9h3.500v11.500z"/></svg>
             Connect on LinkedIn
           </a>
-          <p>With a Bachelor of Science (Honors) in Computer Science from the University of Pretoria, I have developed a strong technical foundation and a keen interest in cybersecurity. I currently work as an Intermediate Security Consultant at Whirly Labs (Pty) Ltd, where I conduct security assessments for predominantly European clients, helping identify and address vulnerabilities to strengthen the security of their systems and applications. I have a particular interest in organisations that integrate AI models into their products and services, exploring the unique security challenges that come with emerging technologies.</p>
-          <p>Previously, I worked as a Cyber Security Consultant at MWR CyberSec, conducting penetration tests for major financial institutions and organisations within South Africa's financial sector. My experience includes identifying and validating security vulnerabilities, producing detailed reports with actionable recommendations and developing automation scripts to improve testing efficiency.</p>
-          <p>While my professional experience is primarily rooted in offensive security, I also have a strong interest in defensive security, particularly information security and the broader practices involved in protecting an organisation's information assets. I am passionate about understanding security from both offensive and defensive perspectives and applying that knowledge to develop practical, effective solutions that strengthen an organisation's overall security posture.</p>
+          <a class="btn" href="Stefan%20v%20%20Schoor%20CV.pdf" download="Stefan van Schoor CV.pdf">
+            <svg class="icon-li dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4.500-4.500M12 15l4.500-4.500M4 20h16"/></svg>
+            Download CV
+          </a>
+          <h2 class="intro-h">Who I am</h2>
+          <ul class="intro-list">
+            <li>Holder of a Bachelor of Science (Honors) in Computer Science from the University of Pretoria</li>
+            <li>Intermediate Security Consultant at Whirly Labs (Pty) Ltd</li>
+            <li>Previously a Cyber Security Consultant at MWR CyberSec</li>
+            <li>Also previously worked as a Microsoft Security Administrator at Optimi Learning</li>
+          </ul>
+          <h2 class="intro-h">What I do</h2>
+          <ul class="intro-list">
+            <li>Conduct security assessments for predominantly European clients, identifying and addressing vulnerabilities in their systems and applications</li>
+            <li>Validate findings and write detailed reports with actionable recommendations</li>
+            <li>Work with clients and their defensive teams to determine gaps in their exisitng monitoring and security policies</li>
+            <li>Develop automation scripts to improve testing efficiency</li>
+            <li>Previously ran end-to-end assessments for major financial institutions in South Africa</li>
+          </ul>
+          <h2 class="intro-h">What I'm interested in</h2>
+          <ul class="intro-list">
+            <li>Defensive or Offensive roles that allow me to combine my existing knowledge with new learnings to ensure safe systems for all</li>
+            <li>Organisations that integrate AI into their products, and the unique security challenges of emerging technologies</li>
+            <li>Information security, including the broader practices of protecting an organisation's information assets</li>
+            <li>Understanding security from both offensive and defensive perspectives to build practical, effective solutions</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -124,14 +151,15 @@
       <div class="container narrow">
         <h2>Future Plans</h2>
         <div class="card stacked">
-          <h3>Moving to the EU</h3>
-          <p>I plan to move to the EU to be closer to family and to further gain experience working with international clients. My brother and his wife live in the Netherlands and I would like to be able to see them more regularly.</p>
+          <h3>Moving to Europe</h3>
+          <p>I plan to move to Europe to be closer to family and to further gain experience working with international clients. My brother and his wife live in the Netherlands and I would like to be able to see them more regularly.</p>
           <p>While I love living in South Africa, I believe moving to Europe will allow me to significantly broaden my horisons, both professionally and personally.</p>
+          <p>I am available for immediate relocation.</p>
           <!-- <p>I plan on eventually moving into a defensive security role where I can use all of my existing knowledge and experience of real-world attack scenarios to secure systems and data.</p> -->
         </div>
         <div class="card growth">
           <h3>Always learning</h3>
-          <p>I always strive to improve myself and, as such, I am always looking to learn and obtain more certifications to keep up to date with the latest security developments.</p>
+          <p>I always strive to improve myself and, as such, I am always looking to learn new skills. This includes working towards certifications to keep up to date with the latest security trends and developments.</p>
         </div>
         <div class="card">
           <h3>Currently working towards</h3>
@@ -146,7 +174,19 @@
       </div>
     </section>
 
-    <section id="projects" class="section alt">
+    <section id="references" class="section alt">
+      <div class="container narrow">
+        <h2>References</h2>
+        <figure class="card quote">
+          <blockquote>
+            <p>During our time working together, I valued Stefan's attention to detail and methodical approach to assessments. His reports were clear and well structured, with close attention paid to the requirements of the engagement.</p>
+          </blockquote>
+          <figcaption><strong>Lian Aldrich (OSCP)</strong><span>Co-founder, Aphotic Security</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
       <div class="container narrow">
         <h2>Programming Projects</h2>
         <p class="lead">While I do not actively work as a developer, I enjoy creating projects to help out friends and family.</p>
@@ -165,7 +205,7 @@
       </div>
     </section>
 
-    <section id="cv" class="section">
+    <section id="cv" class="section alt">
       <div class="container narrow cv-cta">
         <h2>Curriculum Vitae</h2>
         <p>Want the full picture? Download my CV as a PDF.</p>
@@ -183,6 +223,7 @@
       <li><a href="#experience" data-target="experience" aria-label="Experience"><span>Experience</span></a></li>
       <li><a href="#certifications" data-target="certifications" aria-label="Certifications"><span>Certifications</span></a></li>
       <li><a href="#future" data-target="future" aria-label="Future Plans"><span>Future Plans</span></a></li>
+      <li><a href="#references" data-target="references" aria-label="References"><span>References</span></a></li>
       <li><a href="#projects" data-target="projects" aria-label="Projects"><span>Projects</span></a></li>
       <li><a href="#cv" data-target="cv" aria-label="CV"><span>CV</span></a></li>
     </ul>
